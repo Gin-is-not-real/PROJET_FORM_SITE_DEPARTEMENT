@@ -4,10 +4,8 @@ body {
 }
 
 .general-container {
-    margin: 5px;
     padding: 0;
     width: auto;
-    min-width: 480px;
 
     display: flex;
     flex-direction: column;
@@ -29,34 +27,42 @@ body {
 }
 
 .horizontal-container, .vertical-container, .adaptative-container {
-    justify-content: center;
-    align-content: center;
-    background-color: teal;
+    /* justify-content: center;
+    align-content: center; */
+    /* background-color: teal; */
 }
 
-#footer-page, #header-page {
+@media all and(max-device-width: 480px) {
+    
+}
+footer {
+    width: 100%;
+}
+#header-page, #footer-page {
     background-color: black !important;
+    padding: 2%;
 }
-
-@media all and (max-device-width: 480px) {
-
-}
-
 
 h4, h5 {
     margin: 0;
-    background-color: lightcoral;
+    background-color: teal;
 }
 nav {
-    min-width: min-content;
-    max-width: max-content;
-    margin: 0 auto;
+    background-color: transparent;
+    width: 80%;
+    min-width: max-content;
+    margin: 2% auto;
+    /* padding: 2%; */
+    justify-content: space-between ;
+}
+nav > * {
+    margin: 2%;
+
 }
 figure {
-    min-width: min-content;
-    max-width: max-content;
-
-    margin: 0 auto;
+    /* min-width: min-content; 
+    max-width: max-content; */
+    margin: 2% auto;
 }
 .fig-img {
     display: flex;
@@ -68,8 +74,57 @@ figure {
     margin: 0;
 }
 /* histoire */
+#section-histoire {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(20, 5%);
+}
+
 #article-histoire {
-    max-width: 60%;
+    /* margin-left: 2%;
+    max-width: 60%;*/
+    z-index: 1; 
+    grid-row: 3/10;
+    grid-column: 2/5;
+
+    background-color: transparent;
+}
+
+#histoire-fig1 {
+    margin: 0;
+    /* width: 100%; */
+    /* width: 200px; */
+    grid-column: 1/6;
+    min-height: min-content;
+}
+#histoire-fig1 > img {
+    /* max-height: 100%; */
+}
+
+#histoire-fig2 {
+    width: 300%;
+    margin-left: 2%;
+    grid-row: 7/13;
+}
+#histoire-fig2> img {
+}
+
+#histoire-fig3 {
+    width: 200%;
+    grid-row: 8/14;
+    grid-column: 4;
+    min-height: min-content;
+}
+#histoire-fig3> img {
+    max-height: 100%;
+
+}
+#histoire-fig4 {
+    width: 300%;
+    /* min-height: min-content; */
+    grid-row: 8/14;
+}
+#histoire-fig4 > img {
 }
 /* meteo */
 #section-meteo {
