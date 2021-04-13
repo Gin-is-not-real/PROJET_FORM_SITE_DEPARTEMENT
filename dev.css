@@ -1,0 +1,9 @@
+body * {
+    background-color: grey;
+    border: 1px solid white;
+}
+
+footer, header {
+    background-color: rgb(37, 34, 34) !important;
+}
+
