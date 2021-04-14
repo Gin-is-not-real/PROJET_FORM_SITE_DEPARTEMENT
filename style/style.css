@@ -1,11 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
+/* CONTAINERS */
 .general-container {
+    background-color: black;
     padding: 0;
-    width: auto;
 
     display: flex;
     flex-direction: column;
@@ -32,17 +34,21 @@ body {
     /* background-color: teal; */
 }
 
+
 @media all and(max-device-width: 480px) {
     
 }
-footer {
-    width: 100%;
+
+@media all and(max-device-width: 480px) {
+    
 }
+/* GENERAL */
 #header-page, #footer-page {
     background-color: black !important;
     padding: 2%;
 }
-
+footer {
+}
 h4, h5 {
     margin: 0;
     background-color: teal;
@@ -69,12 +75,14 @@ figure {
     flex-direction: column;
 }
 
-/* header */
+/* HEADER */
 #logo-site {
     margin: 0;
 }
-/* histoire */
-#section-histoire {
+
+/* HISTOIRE */
+#section-histoire { 
+    background-color: black;
     display: grid;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(20, 5%);
@@ -82,50 +90,11 @@ figure {
 
 #article-histoire {
     /* margin-left: 2%;
-    max-width: 60%;*/
+    /* max-width: 60%;*/ 
     z-index: 1; 
-    grid-row: 3/10;
-    grid-column: 2/5;
-
-    background-color: transparent;
+    background-color: teal;
 }
 
-#histoire-fig1 {
-    margin: 0;
-    /* width: 100%; */
-    /* width: 200px; */
-    grid-column: 1/6;
-    min-height: min-content;
-}
-#histoire-fig1 > img {
-    /* max-height: 100%; */
-}
-
-#histoire-fig2 {
-    width: 300%;
-    margin-left: 2%;
-    grid-row: 7/13;
-}
-#histoire-fig2> img {
-}
-
-#histoire-fig3 {
-    width: 200%;
-    grid-row: 8/14;
-    grid-column: 4;
-    min-height: min-content;
-}
-#histoire-fig3> img {
-    max-height: 100%;
-
-}
-#histoire-fig4 {
-    width: 300%;
-    /* min-height: min-content; */
-    grid-row: 8/14;
-}
-#histoire-fig4 > img {
-}
 /* meteo */
 #section-meteo {
     min-width: min-content;

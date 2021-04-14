@@ -1,0 +1,54 @@
+ #section-histoire {
+    display: grid;
+    width: 100%;
+    height: auto;
+
+    grid-template-rows: 10vh 10vh 5vh 10vh 10vh 5vh 10vh 10vh 5vh 10vh 10vh;
+}
+#section-histoire figure {
+    width: 100vw;
+    /* height: 100%; */
+}
+#section-histoire img {
+    height: 100%;
+    /* max-width: 100%; */
+    background-size: 100% 100%;
+}
+#histoire-fig1 {
+    grid-row: 1/3;
+}
+
+#article-histoire {
+    grid-row: 2/4;
+    width: 60vw;
+    height: 60vw;
+    justify-self: center;
+}
+#histoire-fig2 {
+    grid-row: 4/6;
+}
+#histoire-fig3 {
+    grid-row: 7/9;
+}
+#histoire-fig4 {
+    grid-row: 10/12;
+}
+
+
+
+#histoire-fig2 {
+}   
+
+
+#bg-img-1 {
+
+}
+#bg-img-1 {
+    
+}
+#bg-img-1 {
+    
+}
+#bg-img-1 {
+    
+}
