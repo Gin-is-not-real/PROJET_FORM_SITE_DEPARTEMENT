@@ -35,13 +35,7 @@ body {
 }
 
 
-@media all and(max-device-width: 480px) {
-    
-}
 
-@media all and(max-device-width: 480px) {
-    
-}
 /* GENERAL */
 #header-page, #footer-page {
     background-color: black !important;
@@ -68,12 +62,9 @@ nav > * {
 figure {
     /* min-width: min-content; 
     max-width: max-content; */
-    margin: 2% auto;
+    margin: 0 auto;
 }
-.fig-img {
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* HEADER */
 #logo-site {
@@ -83,36 +74,11 @@ figure {
 /* HISTOIRE */
 #section-histoire { 
     background-color: black;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(20, 5%);
 }
 
-#article-histoire {
-    /* margin-left: 2%;
-    /* max-width: 60%;*/ 
-    z-index: 1; 
-    background-color: teal;
-}
 
-/* meteo */
-#section-meteo {
-    min-width: min-content;
-    max-width: max-content;
-}
-#article-meteo {
-    max-width: 40%;
-}
 
-/* findus */
-#section-find-us {
-    min-width: min-content;
-    max-width: max-content;
-}
 
-#img-map {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
+
+
 
