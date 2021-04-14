@@ -1,0 +1,37 @@
+.section-location {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: repeat(5, 20vw);
+    grid-template-columns: repeat(5, 20vw);
+
+}
+
+#section-location-1 .round:first-child {
+    min-width: 100vw;
+
+    grid-column: 4;
+    justify-self: right;
+
+    grid-row: 0;
+    /* align-self: flex-start; */
+    align-self: baseline;
+}
+
+#section-location-1 .round *{
+    padding-left: 2vw;
+}
+
+#section-location-1 .round:last-child {
+    grid-column: 4/6;
+    justify-self: start;
+
+    grid-row: 2/4;
+} 
+
+.round figure img {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+    
+}

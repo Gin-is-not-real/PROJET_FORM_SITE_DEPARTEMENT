@@ -1,0 +1,50 @@
+/* 
+    a round container with centrered content
+
+<.round>
+    <article>
+        <h4>
+            <p>
+*/
+
+.round {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+
+    width: fit-content;
+    max-width: max-content;
+    max-height: max-content;
+
+    border: none;
+    background-color: teal;
+}
+.round * {
+    background-color: transparent;
+    border: none;
+}
+.round article {
+    max-width: 90vh;
+    min-height: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10% 20%;
+}
+
+.round figure {
+    display: flex;
+    justify-content: center;
+}
+.round figure img {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; 
+    
+    max-width: 100%;
+    min-height: 40vw;
+}
+
+

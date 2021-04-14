@@ -34,14 +34,9 @@
 }
 
 #section-histoire article {
-    background-size: 100% 100%;
-    background-position: center;
-    background-image: url("bubble.gif");
     /* background-color: #008080; */
-
     font-size: 15pt;
     z-index: 1; 
-
     /* padding: 30px; */
 
     min-width: 33vw;
@@ -66,6 +61,7 @@
     grid-row: 5/8;
     grid-column: 3/6;
     justify-self: right;
+    justify-content: right;
 }
 #article-meteo p {
     max-width: 40vw;
@@ -79,4 +75,10 @@
     height: 20vw;
 }
 
-
+article {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    /* border: 3px solid red; */
+    background-color: teal;
+}

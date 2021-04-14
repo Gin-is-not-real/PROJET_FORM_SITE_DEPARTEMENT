@@ -3,7 +3,20 @@ body {
     padding: 0;
     background-color: black;
 }
+/* pour ecran de 480 max */
+@media all and (max-device-width: 480px) {
+    p {
+        font-size: 12pt;
+    }
+}
 
+/* pour ecran de 480 min */
+@media all and (min-device-width: 481px) {
+    p {
+        font-size: 15pt;
+        color:green;
+    }
+}
 /* CONTAINERS */
 .general-container {
     background-color: black;
