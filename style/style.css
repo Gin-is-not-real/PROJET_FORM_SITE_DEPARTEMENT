@@ -1,25 +1,30 @@
+html {
+    --bgcolor-back:  rgba(0, 0, 0, 0.699);
+    --bgcolor-foot-head: rgba(0, 0, 0, 0.699);
+    --bgcolor1: rgb(128, 115, 0);
+}
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--bgcolor-back);
 }
 /* pour ecran de 480 max */
 @media all and (max-device-width: 480px) {
-    p {
+    /* p {
         font-size: 12pt;
-    }
+    } */
 }
-
 /* pour ecran de 480 min */
 @media all and (min-device-width: 481px) {
-    p {
+    /* p {
         font-size: 15pt;
         color:green;
-    }
+    } */
 }
 /* CONTAINERS */
 .general-container {
-    background-color: black;
+    /* background-color: var(--bgcolor-back); */
+    background-color: aliceblue;
     padding: 0;
 
     display: flex;
@@ -41,24 +46,15 @@ body {
     flex-direction: row;
 }
 
-.horizontal-container, .vertical-container, .adaptative-container {
-    /* justify-content: center;
-    align-content: center; */
-    /* background-color: teal; */
-}
-
-
-
 /* GENERAL */
 #header-page, #footer-page {
-    background-color: black !important;
-    padding: 2%;
+    background-color: var(--bgcolor-foot-head) !important;
+    /* padding: 2%; */
 }
-footer {
-}
+
 h4, h5 {
     margin: 0;
-    background-color: teal;
+    background-color: var(--bgcolor1);
 }
 nav {
     background-color: transparent;
@@ -70,24 +66,16 @@ nav {
 }
 nav > * {
     margin: 2%;
-
 }
 figure {
-    /* min-width: min-content; 
-    max-width: max-content; */
     margin: 0 auto;
 }
-
 
 /* HEADER */
 #logo-site {
     margin: 0;
 }
 
-/* HISTOIRE */
-#section-histoire { 
-    background-color: black;
-}
 
 
 

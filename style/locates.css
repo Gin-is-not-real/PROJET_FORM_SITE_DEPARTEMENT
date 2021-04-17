@@ -4,7 +4,6 @@
 
     grid-template-rows: repeat(5, 20vw);
     grid-template-columns: repeat(5, 20vw);
-
 }
 
 #section-location-1 .round:first-child {

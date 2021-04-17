@@ -4,144 +4,75 @@
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet"  href="style/dev.css" /> -->
     <link rel="stylesheet"  href="style/style.css" />
-    <link rel="stylesheet"  href="style/grid.css" />
+    <link rel="stylesheet"  href="style/accueil.css" />
     
     <title>Mon Departement</title>
 </head>
 
 <body>
+    <header class="vertical-container" id="header-page">
+        <figure class="logo-fig" id="logo-site">
+            <img class="logo-img" src="" alt="logo du site">
+        </figure>
 
-    <section class="general-container" id="page-accueil">
-
-        <header class="vertical-container" id="header-page">
-            <figure class="logo-fig" id="logo-site">
-                <img class="logo-img" src="" alt="logo du site">
-            </figure>
-
-            <nav class="adaptative-container" id="menu-nav" >
-                <button id="lieux">lieux</button>
-                <button id="marchers">marchés</button>
-                <button id="actu">actu</button>
-            </nav>
-        </header>
-
-        <section class="vertical-container" id="section-histoire">
-            <!-- <header id="header-histoire">
-                    <h4>Histoire du departement</h4>
-                </header> -->
-
-            <!-- <section class="bg-img" id="bg-img-1"></section>
-                <section class="bg-img" id="bg-img-2"></section>
-                <section class="bg-img" id="bg-img-3"></section>
-                <section class="bg-img" id="bg-img-4"></section> -->
-
-            <figure class="fig-img-large" id="histoire-fig1">
-                <img src="ressources/lacdo.jpg" alt="">
-            </figure>
-
-            <article class="vertical-container" id="article-histoire">
-                <h4>Histoire du departement</h4>
-
-                <p>Le département a été créé à la Révolution française, le 4 mars 1790.
-
-                Il était d'abord plus considérable qu'aujourd'hui, car il possédait l'arrondissement de Castelsarrasin tout entier. Cet arrondissement lui fut enlevé, en 1808, par la formation du département de Tarn-et-Garonne.
-
-                C'étaient les cours du Tarn et du Tescou qui en dessinaient la limite.
-
-                    GEO
-                    La Haute-Garonne fait partie de la région Occitanie. Elle est limitrophe de nombreux départements : l'Ariège, l'Aude, le Tarn, le Tarn-et-Garonne, le Gers, les Hautes-Pyrénées et enfin l'Espagne, à la limite de la Catalogne et de l'Aragon.
-                </p>
-                </article>
-
-                <figure class="fig-img-large" id="histoire-fig2">
-                    <img src="ressources/thg700700.jpg" alt="martres-tolosane">
-                </figure>
-
-                <article class="vertical-container" id="article-meteo">
-                    <!-- <header id="header-meteo"> -->
-                        <!-- <h4>Situation Météorologique</h4> -->
-                    <!-- </header> -->
-                        <!-- <section class="horizontal-container"> -->
-                                <h4>Situation Météorologique</h4>
-                                <p>
-                                    Des températures douces et clémentes sauront vous accueillir si visitez le département en automne ou en hiver, et un beau et chaleureux soleil illumine en général les belles saisons, que vous soyez en vacances, ou non !
-                                </p>
-                            <!-- <table id="table-meteo">
-                                <tr>
-    
-                                </tr>
-                                <tr>
-                                    <td>Printemps</td>
-                                    <td>26° / 15°</td>
-                                </tr>
-                                <tr>
-                                    <td>Eté</td>
-                                    <td>26° / 15°</td>
-                                </tr>
-                                <tr>
-                                    <td>Automne</td>
-                                    <td>26° / 15°</td>
-                                </tr>
-                                <tr>
-                                    <td>Hiver</td>
-                                    <td>26° / 15°</td>
-                                </tr>
+        <nav class="adaptative-container" id="menu-nav" >
+            <button id="lieux">lieux</button>
+            <button id="marches">marchés</button>
+            <button id="actu">actu</button>
+        </nav>
+    </header>
+    <main class="general-container" id="page-accueil">
         
-                            </table> -->
-                        <!-- </section> -->
-    
-                </article>  
+        <section class="vertical-container" id="section-accueil">
+            <figure class="fig-img-large" id="histoire-fig1">
+                <img src="ressources/balcon-sur-les-pyrenees-1920x1200-1-1920x1200.jpg" alt="vue sur les pyrénées">
+                <!-- <img src="ressources/lacdo.jpg" alt=""> -->
+            </figure>
 
-                <figure class="fig-img-large" id="histoire-fig3">
-                    <img src="ressources/montage.jpg" alt="trés haute garonne">
-                </figure>
+            <section class="horizontal-container" id="section-articles">
 
-                <article class="vertical-container" id="article-geographie">
-                    <h4>Situation géographique</h4>
+                <div class="article-container">
+                    <article class="article-accueil" id="article-histoire">
+                        <h4>Histoire du departement</h4>
+                        <p>
+                            Le département a été créé à la Révolution française, le 4 mars 1790.
+                            Il était d'abord plus considérable qu'aujourd'hui, car il possédait l'arrondissement de Castelsarrasin tout entier. Cet arrondissement lui fut enlevé, en 1808, par la formation du département de Tarn-et-Garonne.
+                            C'étaient les cours du Tarn et du Tescou qui en dessinaient la limite.
+                        </p>
+                    </article>
 
-                    <div class="horizontal-container">
-                    <figure class="fig-img" id="fig-map">
-                        <img id="img-map" src="ressources/map500px.svg.gif" alt="ou se trouve le departement">
+                    <figure class="fig-article">
+                        <img src="ressources/stbea.jpg" alt="village de st bea">
                     </figure>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequatur nesciunt, tempora tempore debitis unde similique explicabo neque accusantium 
-                    </p>
                 </div>
-                </article>
 
-                <figure class="fig-img-large" id="histoire-fig4">
-                    <img src="ressources/balcon-sur-les-pyrenees-1920x1200-1-1920x1200.jpg" alt="">
-                </figure>
+                <div class="article-container">
+                    <article class="article-accueil" id="article-meteo">
+                        <h4>Situation Météorologique</h4>
+                        <p>
+                            Des températures douces et clémentes sauront vous accueillir si visitez le département en automne ou en hiver, et un beau et chaleureux soleil illumine les belles saisons, que vous soyez en vacances, ou non !
+                        </p>
+                    </article>
 
-            </section>
-                
-   
-
-            <!-- <section class="vertical-container" id="section-find-us">
-                <header id="header-find-us">
-                    <h4>Situation géographique</h4>
-                </header>
-                <section class="horizontal-container">
-                    <figure class="fig-img" id="map">
-                        <img id="img-map" src="ressources/map500px.svg.gif" alt="ou se trouve le departement">
-                        <figcaption>Lorem ipsum</figcaption>
+                    <figure class="fig-article">
+                        <img src="ressources/montage.jpg" alt="paysage de montagne">
                     </figure>
+                </div>
 
-                    <section id="contacts-utiles">
-                        <header id="header-contacts">
-                            <h5>Contacts utiles</h5>
-                        </header>
-                        <div>Lorem ipsum dolor sit</div>
-                        <div>Lorem ipsum dolor sit</div>
-                        <div>Lorem ipsum dolor sit</div>
-                        <div>Lorem ipsum dolor sit</div>
-                    </section>
-                </section> -->
+                <div class="article-container">
+                    <article class="article-accueil" id="article-geo">
+                        <h4>Situation Météorologique</h4>
+                        <p>
+                            Des températures douces et clémentes sauront vous accueillir si visitez le département en automne ou en hiver, et un beau et chaleureux soleil illumine en général les belles saisons, que vous soyez en vacances, ou non !
+                        </p>
+                    </article>
 
-
-
+                    <figure class="fig-article">
+                        <img src="ressources/luchon_en_hiver.jpg" alt="luchon station de sky">
+                    </figure>
+                </div>
             </section>
+        </section>
                 
 
         <footer class="vertical-container"  id="footer-page">
@@ -166,7 +97,7 @@
 
         </footer>
 
-    </section>
+    </main>
 </body>
 
 </html>
