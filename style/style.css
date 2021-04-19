@@ -7,6 +7,27 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bgcolor-back);
+
+    font-family: 'Rock Salt', cursive;
+    font-size: 5pt;
+    /* font-family: 'Sedgwick Ave', cursive; */
+}
+
+h4, h5 {
+    margin: 0;
+}
+nav {
+    background-color: transparent;
+    width: 80%;
+    min-width: max-content;
+    margin: 2% auto;
+    justify-content: space-between ;
+}
+nav > * {
+    margin: 2%;
+}
+figure {
+    margin: 0 auto;
 }
 /* pour ecran de 480 max */
 @media all and (max-device-width: 480px) {
@@ -21,15 +42,15 @@ body {
         color:green;
     } */
 }
+
 /* CONTAINERS */
 .general-container {
     /* background-color: var(--bgcolor-back); */
     background-color: aliceblue;
-    padding: 0;
-
     display: flex;
     flex-direction: column;
 }
+
 
 .horizontal-container {
     display: flex;
@@ -47,34 +68,10 @@ body {
 }
 
 /* GENERAL */
-#header-page, #footer-page {
-    background-color: var(--bgcolor-foot-head) !important;
-    /* padding: 2%; */
-}
 
-h4, h5 {
-    margin: 0;
-    background-color: var(--bgcolor1);
-}
-nav {
-    background-color: transparent;
-    width: 80%;
-    min-width: max-content;
-    margin: 2% auto;
-    /* padding: 2%; */
-    justify-content: space-between ;
-}
-nav > * {
-    margin: 2%;
-}
-figure {
-    margin: 0 auto;
-}
 
-/* HEADER */
-#logo-site {
-    margin: 0;
-}
+
+
 
 
 

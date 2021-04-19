@@ -1,5 +1,6 @@
 #header-page, #footer-page {
     background-color: rgb(119, 113, 113)!important;
+    /* margin: 0 auto; */
 }
 /* HEADER */
 #logo-site {
@@ -16,8 +17,8 @@
 }
 #header-nav button {
     font-family: 'Rock Salt', cursive;
-    font-size: 8pt;
-    width: 150px;
+    font-size: 7pt;
+    width: 100px;
 
     background-color: rgb(116, 108, 108);
     border: none;
@@ -32,6 +33,9 @@
 }
 
 /* FOOTER */
+#footer-page {
+    /* padding-top: 5%; */
+}
 #div-totop {
     margin: 0 auto;
     margin-top: -24px;

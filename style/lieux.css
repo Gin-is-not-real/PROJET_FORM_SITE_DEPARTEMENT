@@ -1,0 +1,16 @@
+#section-lieux {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lieu-container {
+    width: 30%;
+    height: auto;
+}
+.lieu-container figure {
+    width: 30%;
+}
+.lieu-container img {
+    width: 100%;
+    height: 100%;
+}
