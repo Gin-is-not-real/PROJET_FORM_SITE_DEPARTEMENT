@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet"  href="style/dev.css" /> -->
+    <link rel="stylesheet"  href="style/dev.css" />
     <link rel="stylesheet"  href="style/style.css" />
     <link rel="stylesheet"  href="style/headerfooter.css" />
     <link rel="stylesheet"  href="style/accueil.css" />
@@ -10,6 +10,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
     </style>  
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    </style> 
     
     <title>Mon Departement</title>
 </head>
@@ -17,11 +21,11 @@
 <body>
     <header class="vertical-container" id="header-page">
         <figure class="logo-fig" id="logo-site">
-            <img class="logo-img" src="" alt="logo du site">
+            <img class="logo-img" src="ressources/logo-site4.gif" alt="logo du site">
         </figure>
 
         <nav class="adaptative-container" id="header-nav" >
-            <button id="lieux">lieux</button>
+            <button id="lieux">lieux incourtounables</button>
             <button id="marches">marchés</button>
             <button id="actu">actualités</button>
         </nav>
@@ -37,6 +41,10 @@
             <section class="horizontal-container" id="section-articles">
 
                 <div class="article-container">
+                    <figure class="fig-article">
+                        <img src="ressources/st-bea.jpg" alt="village de st bea">
+                    </figure>
+
                     <article class="article-accueil" id="article-histoire">
                         <h4>Histoire du departement</h4>
                         <p>
@@ -44,27 +52,13 @@
                             Il était d'abord plus considérable qu'aujourd'hui, car il possédait l'arrondissement de Castelsarrasin tout entier. Cet arrondissement lui fut enlevé, en 1808, par la formation du département de Tarn-et-Garonne.
                         </p>
                     </article>
-
-                    <figure class="fig-article">
-                        <img src="ressources/st-bea.jpg" alt="village de st bea">
-                    </figure>
                 </div>
 
                 <div class="article-container">
-                    <article class="article-accueil" id="article-meteo">
-                        <h4>Situation Météorologique</h4>
-                        <p>
-                            Un beau et chaleureux soleil en été et de la neige sur les Pyrénées pour les saisons de sky, rien de tel pour passer de bonnes vacances !
-                            Le reste de l'année, des températures douces et clémentes sauront vous accueillir !
-                        </p>
-                    </article>
-
                     <figure class="fig-article">
                         <img src="ressources/montage.jpg" alt="paysage de montagne">
                     </figure>
-                </div>
 
-                <div class="article-container">
                     <article class="article-accueil" id="article-geo">
                         <h4>Situation géographique</h4>
                         <p>
@@ -75,12 +69,21 @@
                             <img src="ressources/map500px.svg.gif" alt="carte de france">
                         </figure>
                     </article>
+                </div>
 
-                    
-
+                <div class="article-container">
                     <figure class="fig-article">
                         <img src="ressources/luchon.jpg" alt="superbagnères de luchon en hiver">
                     </figure>
+
+                    <article class="article-accueil" id="article-meteo">
+                        <h4>Situation Météorologique</h4>
+                        <p>
+                            Un beau et chaleureux soleil en été et de la neige sur les Pyrénées pour les saisons de sky, rien de tel pour passer de bonnes vacances !
+                            Le reste de l'année, des températures douces et clémentes sauront vous accueillir !
+                        </p>
+                        
+                    </article>
                 </div>
             </section>
         </section>

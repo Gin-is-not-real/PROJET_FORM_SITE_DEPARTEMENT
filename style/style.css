@@ -2,29 +2,30 @@ html {
     --bgcolor-back:  rgba(0, 0, 0, 0.699);
     --bgcolor-foot-head: rgba(0, 0, 0, 0.699);
     --bgcolor1: rgb(128, 115, 0);
+    --bgcolor1transparent: rgba(128, 115, 0, 0.582);
 }
 body {
     margin: 0;
     padding: 0;
     background-color: var(--bgcolor-back);
-
-    font-family: 'Rock Salt', cursive;
-    font-size: 5pt;
-    /* font-family: 'Sedgwick Ave', cursive; */
+    color:rgba(0, 0, 0, 0.938);
+    /* font-family: 'Rock Salt', cursive; */
+    font-size: 12pt;
+    font-family: 'Courgette', cursive;
+    /* max-width: 900px;
+    margin: 0 auto; */
 }
-
 h4, h5 {
     margin: 0;
+    font-size: 150%;
 }
-nav {
-    background-color: transparent;
-    width: 80%;
-    min-width: max-content;
-    margin: 2% auto;
-    justify-content: space-between ;
-}
-nav > * {
-    margin: 2%;
+@media all and (max-device-width: 480px) {
+    p {
+        font-size: 8pt;
+    }
+    h4, h5 {
+        font-size: 120%;
+    }
 }
 figure {
     margin: 0 auto;
@@ -49,19 +50,16 @@ figure {
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
-
-
 .horizontal-container {
     display: flex;
     flex-direction: row;
 }
-
 .vertical-container {
     display: flex;
     flex-direction: column;
 }
-
 .adaptative-container {
     display: flex;
     flex-direction: row;
