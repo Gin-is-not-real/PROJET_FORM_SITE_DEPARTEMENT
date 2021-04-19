@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet"  href="style/dev.css" /> -->
     <link rel="stylesheet"  href="style/style.css" />
+    <link rel="stylesheet"  href="style/headerfooter.css" />
     <link rel="stylesheet"  href="style/accueil.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+    </style>  
     
     <title>Mon Departement</title>
 </head>
@@ -15,18 +20,18 @@
             <img class="logo-img" src="" alt="logo du site">
         </figure>
 
-        <nav class="adaptative-container" id="menu-nav" >
+        <nav class="adaptative-container" id="header-nav" >
             <button id="lieux">lieux</button>
             <button id="marches">marchés</button>
-            <button id="actu">actu</button>
+            <button id="actu">actualités</button>
         </nav>
     </header>
+
     <main class="general-container" id="page-accueil">
         
         <section class="vertical-container" id="section-accueil">
             <figure class="fig-img-large" id="histoire-fig1">
                 <img src="ressources/balcon-sur-les-pyrenees-1920x1200-1-1920x1200.jpg" alt="vue sur les pyrénées">
-                <!-- <img src="ressources/lacdo.jpg" alt=""> -->
             </figure>
 
             <section class="horizontal-container" id="section-articles">
@@ -37,12 +42,11 @@
                         <p>
                             Le département a été créé à la Révolution française, le 4 mars 1790.
                             Il était d'abord plus considérable qu'aujourd'hui, car il possédait l'arrondissement de Castelsarrasin tout entier. Cet arrondissement lui fut enlevé, en 1808, par la formation du département de Tarn-et-Garonne.
-                            C'étaient les cours du Tarn et du Tescou qui en dessinaient la limite.
                         </p>
                     </article>
 
                     <figure class="fig-article">
-                        <img src="ressources/stbea.jpg" alt="village de st bea">
+                        <img src="ressources/st-bea.jpg" alt="village de st bea">
                     </figure>
                 </div>
 
@@ -50,7 +54,8 @@
                     <article class="article-accueil" id="article-meteo">
                         <h4>Situation Météorologique</h4>
                         <p>
-                            Des températures douces et clémentes sauront vous accueillir si visitez le département en automne ou en hiver, et un beau et chaleureux soleil illumine les belles saisons, que vous soyez en vacances, ou non !
+                            Un beau et chaleureux soleil en été et de la neige sur les Pyrénées pour les saisons de sky, rien de tel pour passer de bonnes vacances !
+                            Le reste de l'année, des températures douces et clémentes sauront vous accueillir !
                         </p>
                     </article>
 
@@ -61,43 +66,65 @@
 
                 <div class="article-container">
                     <article class="article-accueil" id="article-geo">
-                        <h4>Situation Météorologique</h4>
+                        <h4>Situation géographique</h4>
                         <p>
-                            Des températures douces et clémentes sauront vous accueillir si visitez le département en automne ou en hiver, et un beau et chaleureux soleil illumine en général les belles saisons, que vous soyez en vacances, ou non !
+                            La Haute-Garonne fait partie de la région Occitanie. Elle est limitrophe de nombreux départements : l'Ariège, l'Aude, le Tarn, le Tarn-et-Garonne, le Gers, les Hautes-Pyrénées et enfin l'Espagne, à la limite de la Catalogne et de l'Aragon.
                         </p>
+                        
+                        <figure id="fig-map">
+                            <img src="ressources/map500px.svg.gif" alt="carte de france">
+                        </figure>
                     </article>
 
+                    
+
                     <figure class="fig-article">
-                        <img src="ressources/luchon_en_hiver.jpg" alt="luchon station de sky">
+                        <img src="ressources/luchon.jpg" alt="superbagnères de luchon en hiver">
                     </figure>
                 </div>
             </section>
         </section>
+
+        <!-- <section class="horizontal-container" id="section-map">
+            <figure class="fig-map">
+                <img src="ressources/map500px.svg.gif" alt="carte de france">
+            </figure>
+            <section id="section-contacts">
+
+            </section>
+        </section> -->
                 
+    </main>
 
         <footer class="vertical-container"  id="footer-page">
 
-            <figure class="fig-icon">
-                <img class="img-icon" src="" alt="haut de page">
-            </figure>
+            <div id="div-totop">
+                <button id="totop">
+                    <img src="ressources/icon_totop_arrow.png">
+                </button>
+            </div>
+            
 
-            <nav class="horizontal-container" id="nav-footer">
+            <!-- <figure class="fig-icon" id="fig-totop">
+                <img class="img-icon" src="ressources/icon_totop_arrow.png" alt="haut de page">
+            </figure> -->
+
+            <nav class="horizontal-container" id="footer-nav">
                 <figure class="icon-fig">
-                    <img class="img-icon" src="" alt="fb">
+                    <img class="img-icon" src="ressources/icon-fb.png" alt="logo facebook">
                 </figure>
 
                 <figure class="icon-fig">
-                    <img class="img-icon" src="" alt="twt">
+                    <img class="img-icon" src="ressources/icon-twitter.png" alt="logo twitter">
                 </figure>
 
                 <figure class="icon-fig">
-                    <img class="img-icon" src="" alt="ins">
+                    <img class="img-icon" src="ressources/icon-instagram.png" alt="logo instagram">
                 </figure>
             </nav>
 
         </footer>
 
-    </main>
 </body>
 
 </html>
