@@ -1,6 +1,6 @@
 header, footer {
     --bg-headfoot: rgba(52, 63, 30, 0.767);
-    --bg-headfoot: rgba(52, 63, 30);
+    --bg-headfoot: rgb(62, 75, 36);
     --btn-headfoot: rgb(128, 115, 0);
     --btn-hover-headfoot: rgb(146, 132, 1);
 
