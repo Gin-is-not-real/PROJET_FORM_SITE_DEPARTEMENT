@@ -1,22 +1,16 @@
 header, footer {
-    --bg-headfoot: rgba(52, 63, 30, 0.767);
-    --bg-headfoot: rgb(62, 75, 36);
+    --bg-headfoot: rgba(62, 75, 36, 0.966);
     --btn-headfoot: rgb(128, 115, 0);
     --btn-hover-headfoot: rgb(146, 132, 1);
-
-    /* --bg-headfoot: rgba(0, 0, 0, 0.767); */
     z-index: 2;
 }
 #header-page, #footer-page {
     background-color: var(--bg-headfoot)!important;
-    /* margin: 0 auto; */
     padding-bottom: 1%;
-
 }
 nav {
     background-color: transparent;
     width: 60%;
-    /* min-width: max-content; */
     margin: 0 auto;
     padding: 1%;
     justify-content: space-around;
@@ -24,11 +18,18 @@ nav {
 }
 
 /* HEADER */
-#header-page {
+header {
+    margin-top: -2%;
+    border-bottom: 4px solid black;
+}
+a {
+    font-size: 12pt;
+    color: rgb(0, 0, 0);
 }
 #logo-site {
     margin: 0;
-    width: 260px;
+    padding: 4% 4% 0 4%;
+    width: 400px;
     height: auto;
     overflow: visible;
 }
@@ -37,16 +38,14 @@ nav {
     height: auto;
 }
 #header-nav {
-    /* margin-top: -2%; */
+    padding-top: 0;
+    padding-bottom: 2%;
 }
 #header-nav button {
     font-family: 'Rock Salt', cursive;
-    
-    font-size: 7pt;
-    /* width: 100px; */
-    /* width: 20%; */
-    /* max-width: 120px; */
-    padding-left: 6%;
+    padding-left: 3%;
+    line-height: 15px;
+
     width: 60px;
     height: 50px;
     text-align: right;
@@ -65,8 +64,8 @@ nav {
 }
 
 /* FOOTER */
-#footer-page {
-    /* padding-bottom: 2%; */
+footer {
+    border-top: 4px solid black;
 }
 #div-totop {
     margin: 0 auto;

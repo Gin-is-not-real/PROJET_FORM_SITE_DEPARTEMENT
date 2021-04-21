@@ -17,7 +17,6 @@ h4 {
 
     margin: 4% 2%;
     padding: 2%;
-    padding-top: 5%;
     display: flex;
     flex-direction: row;
     border: 1px solid gray;
@@ -39,6 +38,7 @@ h4 {
     }
 }
 .actu-container figure {
+    margin-top: 5%;
     min-width: 180px;
     min-height: 180px;
 

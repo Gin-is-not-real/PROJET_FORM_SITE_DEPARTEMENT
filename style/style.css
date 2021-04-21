@@ -19,6 +19,7 @@ h4, h5 {
     margin: 0;
     /* font-size: 150%; */
 }
+
 @media all and (max-device-width: 480px) {
     p {
         /* font-size: 8pt; */
@@ -46,8 +47,6 @@ figure {
 
 /* CONTAINERS */
 .general-container {
-    /* background-color: var(--bgcolor-back); */
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -65,12 +64,24 @@ figure {
     flex-direction: row;
 }
 
-/* GENERAL */
+/* hover and other */
+.article-container:hover, .actu-container:hover, .lieu-container:hover, .event-container:hover, .nav-btn:hover {
+    box-shadow: 2px 2px 5px black;
+}
 
+.nav-btn:hover {
+    text-shadow: 2px 2px 5px white;
+}
 
-
-
-
+.fig-article:hover, .fig-actu:hover, .fig-event:hover, .fig-lieux:hover {
+    box-shadow: 2px 2px 5px black;
+    width: 200px;
+    height: 200px;
+}
+.fig-article:hover, .fig-actu:hover {
+    max-width: 200px;
+    max-height: 200px;
+}
 
 
 

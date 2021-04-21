@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet"  href="style/dev.css" />
         <link rel="stylesheet"  href="style/style.css" />
         <link rel="stylesheet"  href="style/headerfooter.css" />
         <link rel="stylesheet"  href="style/actus.css" />
@@ -13,6 +12,9 @@
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
             </style> 
+
+
+
         <title>Actualités</title>
     </head>
 
@@ -23,9 +25,10 @@
         </figure>
 
         <nav class="adaptative-container" id="header-nav" >
-            <button id="lieux">lieux incourtounables</button>
-            <button id="marches">marchés</button>
-            <button id="actu">actualités</button>
+            <button class="nav-btn" id="index" onclick="document.location.href='index.html'">accueil</button>
+            <button class="nav-btn" id="lieux" onclick="document.location.href='lieux.html'">lieux incontournables</button>
+            <button class="nav-btn" id="events" onclick="document.location.href='events.html'">marchés</button>
+            <button class="nav-btn" id="actus" onclick="document.location.href='actus.html'">actualités</button>
         </nav>
     </header>
 
@@ -62,26 +65,27 @@
 
             <section class="actu-container" id="actu-3">
                 <figure class="fig-actu">
-                    <image src="ressources/marche1.jpg" alt="etals de marché"></image>
+                    <image src="ressources/parc.jpg" alt="parc Clement Ader à Muret"></image>
                 </figure>
 
                 <article>
-                    <h4>titre</h4>
+                    <h4>Une fausse actualité </h4>
                     <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, non facere sapiente eius rerum modi eaque deserunt? Iusto ipsam eius fugit. Soluta aliquid veniam dolore numquam? Unde corporis rem illo.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rem id dignissimos quisquam minima porro dolore libero beatae reprehenderit? Dolorem, dolor quod! Iusto, eius sit. Ducimus eveniet itaque dolor quis?
                     </p> 
+
                 </article>
             </section>
 
             <section class="actu-container" id="actu-4">
                 <figure class="fig-actu">
-                    <image src="ressources/marche1.jpg" alt="etals de marché"></image>
+                    <image src="ressources/banc.jpg" alt="photo d'un banc"></image>
                 </figure>
 
                 <article>
-                    <h4>Marché de plein vent de Fenouillet </h4>
+                    <h4>Une Actualité sans intêret</h4>
                     <p> 
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi doloremque vel saepe itaque tenetur debitis porro quis, accusamus temporibus sit sunt mollitia in, odit quia autem, molestiae eligendi facere rem.
+                        Aujourd'hui le 24 avril 2021 dans le Muretain, comme beaucoup d'autres jours depuis le confinement, il ne s'est absolument rien passé. 
                     </p> 
                 </article>
             </section>
@@ -92,7 +96,7 @@
                 </figure>
 
                 <article>
-                    <h4>Marché de plein vent de Fenouillet </h4>
+                    <h4>Une autre actualité </h4>
                     <p> 
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi doloremque vel saepe itaque tenetur debitis porro quis, accusamus temporibus sit sunt mollitia in, odit quia autem, molestiae eligendi facere rem.
                     </p> 
@@ -105,7 +109,7 @@
                 </figure>
 
                 <article>
-                    <h4>Marché de plein vent de Fenouillet </h4>
+                    <h4>Encore une actualité fictive </h4>
                     <p> 
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi doloremque vel saepe itaque tenetur debitis porro quis, accusamus temporibus sit sunt mollitia in, odit quia autem, molestiae eligendi facere rem.
                     </p> 
@@ -118,7 +122,7 @@
 
         <div id="div-totop">
             <button id="totop">
-                <img src="ressources/icon_totop_arrow.png">
+                <a href=""><img src="ressources/icon_totop_arrow.png"></a>
             </button>
         </div>
 
@@ -137,4 +141,8 @@
         </nav>
     </footer>
 </body>
+
+<script src="scripts\hiddenButton.js">
+</script>
+
 </html>

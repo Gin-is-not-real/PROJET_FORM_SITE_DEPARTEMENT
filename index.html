@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet"  href="style/dev.css" />
     <link rel="stylesheet"  href="style/style.css" />
     <link rel="stylesheet"  href="style/headerfooter.css" />
     <link rel="stylesheet"  href="style/accueil.css" />
@@ -14,8 +13,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
     </style> 
-    
-    <title>Mon Departement</title>
+
+    <title>Haute-Garonne</title>
 </head>
 
 <body>
@@ -25,17 +24,19 @@
         </figure>
 
         <nav class="adaptative-container" id="header-nav" >
-            <button id="lieux">lieux incourtounables</button>
-            <button id="marches">marchés</button>
-            <button id="actu">actualités</button>
+            <button class="nav-btn" id="index" onclick="document.location.href='index.html'">accueil</button>
+            <button class="nav-btn" id="lieux" onclick="document.location.href='lieux.html'">lieux incontournables</button>
+            <button class="nav-btn" id="events" onclick="document.location.href='events.html'">marchés</button>
+            <button class="nav-btn" id="actus" onclick="document.location.href='actus.html'">actualités</button>
         </nav>
     </header>
 
     <main class="general-container" id="page-accueil">
-        
         <section class="vertical-container" id="section-accueil">
             <figure class="fig-img-large" id="histoire-fig1">
-                <img src="ressources/balcon-sur-les-pyrenees-1920x1200-1-1920x1200.jpg" alt="vue sur les pyrénées">
+                <!-- <img src="ressources/balcon-sur-les-pyrenees-1920x1200-1-1920x1200.jpg" alt="vue sur les pyrénées"> -->
+                <img src="ressources/balcon-trim.jpg" alt="vue sur les pyrénées">
+
             </figure>
 
             <section class="horizontal-container" id="section-articles">
@@ -87,30 +88,14 @@
                 </div>
             </section>
         </section>
-
-        <!-- <section class="horizontal-container" id="section-map">
-            <figure class="fig-map">
-                <img src="ressources/map500px.svg.gif" alt="carte de france">
-            </figure>
-            <section id="section-contacts">
-
-            </section>
-        </section> -->
-                
     </main>
 
         <footer class="vertical-container"  id="footer-page">
-
             <div id="div-totop">
                 <button id="totop">
-                    <img src="ressources/icon_totop_arrow.png">
+                    <a href=""><img src="ressources/icon_totop_arrow.png"></a>
                 </button>
             </div>
-            
-
-            <!-- <figure class="fig-icon" id="fig-totop">
-                <img class="img-icon" src="ressources/icon_totop_arrow.png" alt="haut de page">
-            </figure> -->
 
             <nav class="horizontal-container" id="footer-nav">
                 <figure class="icon-fig">
@@ -125,9 +110,10 @@
                     <img class="img-icon" src="ressources/icon-instagram.png" alt="logo instagram">
                 </figure>
             </nav>
-
         </footer>
-
 </body>
+
+<script src="scripts\hiddenButton.js">
+</script>
 
 </html>

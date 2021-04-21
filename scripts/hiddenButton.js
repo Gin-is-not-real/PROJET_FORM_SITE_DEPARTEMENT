@@ -1,10 +1,20 @@
-let url = window.location.href;
-let btns = document.querySelectorAll(".nav-btn");
-// console.log(btns);
+function hiddeNavButton() {
+    let url = window.location.href;
+    let btns = document.querySelectorAll(".nav-btn");
 
-btns.forEach(element => {
-    // console.log(element.style.display);
-    if(url.includes(element.id)) {
-        element.style.display = "none";
-    }
-});
+    btns.forEach(element => {
+        if(url.includes(element.id)) {
+            element.style.display = "none";
+        }
+    });
+}
+hiddeNavButton();
+
+///////////////////////////////////////////////////
+let totop = document.querySelector("#totop");
+totop.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
